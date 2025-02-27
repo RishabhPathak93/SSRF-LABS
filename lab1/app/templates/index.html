@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSRF Lab</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h2>SSRF Lab</h2>
+    <p>Enter a URL to fetch:</p>
+    <form id="ssrf-form" action="/fetch" method="POST">
+        <input type="text" id="url-input" name="url" placeholder="http://example.com" required>
+        <button type="submit">Fetch</button>
+    </form>
+</body>
+</html>
+
